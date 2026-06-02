@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "description": "Claude command registry for Ben's toolkit",
+  "commands": {
+    "IQUEST": {
+      "aliases": ["IQ"],
+      "version": "2.0",
+      "description": "Interactive questionnaire for decisions",
+      "instructions": "Research the topic, generate questions following the IQUEST schema, fetch the latest shell from shells/IQUEST_Shell.jsx, inject questions, output as JSX artifact",
+      "schema": "schemas/iquest_schema.json"
+    },
+    "IQUESTLOOP": {
+      "aliases": ["IL"],
+      "version": "1.0",
+      "description": "Iterate IQUEST until no questions remain or user says stop"
+    },
+    "IGUIDE": {
+      "aliases": ["IG"],
+      "version": "1.0",
+      "description": "Step-by-step interactive guide with NEXT STEP and STUCK buttons",
+      "instructions": "Generate step-by-step guide as JSX using the IGUIDE shell from shells/IGUIDE_Shell.jsx"
+    },
+    "RECAP": {
+      "version": "1.0",
+      "description": "Structured summary of active tools, pending decisions, and next actions"
+    },
+    "HELP": {
+      "version": "1.0",
+      "description": "List available commands with one-line descriptions — works offline from memory"
+    },
+    "STATUS": {
+      "version": "1.0",
+      "description": "Ping GitHub registry, report command availability and any stale definitions"
+    },
+    "HANDOFF": {
+      "version": "1.0",
+      "description": "Generate a zip package of all active artifacts and context for continuing in a new chat"
+    },
+    "SPRINT": {
+      "version": "1.0",
+      "description": "Break a build request into an explicit plan, show it, execute one step at a time with approval between steps"
+    }
+  }
+}
